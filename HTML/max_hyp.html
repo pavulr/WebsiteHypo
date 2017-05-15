@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="/Users/paulritzen/Documents/WebsiteHypo/CSS/mystyles.css" media="screen" />
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1">
+	
+	<div class="navbar">
+	<ul> 
+	<li class="inactive"><a href=./home.html>Home</a></li>
+	<li class="active"><a href=./max_hyp.html>Bereken maximale hypotheek</a></li>	
+	<li class="inactive"><a href=./monthly_payments>Bepaal de maandlasten</a></li>
+	</ul>
+	</div>
+		
+    <title>Meer inzicht in uw hypotheek</title>
+  </head>
+
+  <body>
+    <!-- This code is in the public domain. Enjoy! -->
+    <div class = "textbox">
+    <h1>Bereken maximale hypotheek</h1>
+    <p>Hier kun je de maximale hypotheek berekenen. Om dit te bepalen wordt deze op twee manieren bepaald in de volgende stappen.
+    <h2>Stap 1/2: Maximale hypotheek op basis van woningwaarde</h2>
+    <p> In 2017 is het maximale hypotheek bedrag gelimiteerd op 102% van de getaxeerde woningwaarde. Deze limiet houdt geen rekening met het (gezamenlijk) inkomen en of deze hypotheeklast ook kan worden gedragen.  
+    Uw woning waarde is:
+
+	<form action="/Users/paulritzen/Documents/WebsiteHypo/PHP/Max_hypo_house.php" method = "get">
+  		Woningwaarde: <input type="number" name="house_value" value="$house_value"><br>
+	</form>
+    
+    </p>
+    <h2>Stap 2/2: Maximale hypotheek op basis van inkomen</h2>
+    <p>De maximale hypotheek op basis van het (gezamenlijk) salaris.</p>
+    </p>
+    </div>
+  </body>
+</html>
