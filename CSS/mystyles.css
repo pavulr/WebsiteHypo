@@ -12,7 +12,7 @@ div.navbar ul{
     padding-top:1em;
     padding-left:1em;
     padding-bottom:4em;
-    width:80%;
+    max-width:90%;
     } 
        
 div.navbar li{
@@ -43,10 +43,12 @@ div.textbox {
 	border: 2px solid;
 	padding-top:0em;
 	padding-left:1em;
-	width:80%;
+	width:90%;
 	}
 	
 h2{ color: orange}
 
 
-p {width:80%;}
+p {max-width:90%;}
+
+table {max-width:90%;}
