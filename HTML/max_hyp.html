@@ -21,10 +21,10 @@
   <body>
     <!-- This code is in the public domain. Enjoy! -->
     <div class = "textbox">
-    <h1>Bereken maximale hypotheek2</h1>
+    <h1>Bereken maximale hypotheek</h1>
     <p>Hier kun je de maximale hypotheek berekenen. Om dit te bepalen wordt deze op twee manieren bepaald in de volgende stappen.
     <h2>Stap 1/2: Maximale hypotheek op basis van woningwaarde</h2>
-    <p> In 2017 is het maximale hypotheek bedrag gelimiteerd op 102% van de getaxeerde woningwaarde. Deze limiet houdt geen rekening met het (gezamenlijk) inkomen en of deze hypotheeklast ook kan worden gedragen.  </p>
+    <p> In 2017 is het maximale hypotheek bedrag gelimiteerd op 101% van de getaxeerde woningwaarde. Deze limiet houdt geen rekening met het (gezamenlijk) inkomen en of deze hypotheeklast ook kan worden gedragen.  </p>
 
 <table>
 <tr> 
@@ -33,8 +33,8 @@
 <th>Maximale hypotheek:</th>
 </tr>
 <tr>
-<td> <input id="numb1"> </td>
-<td> <input id="numb2"> </td>
+<td> <p> &#8364; <input id="numb1"> ,- </p> </td>
+<td> <p> &#8364; <input id="numb2"> ,- </p> </td>
 <td> <p id="demo"> </p> </td>
 </tr>
 </table>
@@ -49,8 +49,7 @@ function myFunction() {
     x2 = document.getElementById("numb2").value; 
 	y = Math.round(1.01*Math.min(x1,x2));
 	y_string = y.toString();
-	str1 = "&#8364;";
-	str3 = str1.concat(y_string,",-");
+	str3 = y_string.concat(",-");
     document.getElementById("demo").innerHTML = str3;
 }
 </script>

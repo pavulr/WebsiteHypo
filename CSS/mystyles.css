@@ -49,6 +49,15 @@ div.textbox {
 h2{ color: orange}
 
 
-p {max-width:90%;}
+p {max-width:95%;}
 
-table {max-width:90%;}
+table {
+    width: 90%;
+}
+
+th {
+    text-align: left;
+}
+
+
+
