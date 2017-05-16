@@ -24,19 +24,30 @@
     <h1>Bereken maximale hypotheek2</h1>
     <p>Hier kun je de maximale hypotheek berekenen. Om dit te bepalen wordt deze op twee manieren bepaald in de volgende stappen.
     <h2>Stap 1/2: Maximale hypotheek op basis van woningwaarde</h2>
-    <p> In 2017 is het maximale hypotheek bedrag gelimiteerd op 102% van de getaxeerde woningwaarde. Deze limiet houdt geen rekening met het (gezamenlijk) inkomen en of deze hypotheeklast ook kan worden gedragen.  
-    Uw woning waarde is:
+    <p> In 2017 is het maximale hypotheek bedrag gelimiteerd op 102% van de getaxeerde woningwaarde. Deze limiet houdt geen rekening met het (gezamenlijk) inkomen en of deze hypotheeklast ook kan worden gedragen.  </p>
+    
+<p>Uw woningwaarde:</p>
+<input id="numb1">
+<input id="numb2">
+<button type="button" onclick="myFunction()">Submit</button>
 
-<?php
 
-    $var = 5;
-  ?>
+<p> De maximale hypotheek waar u voor in aanmerking komt op basis van de waarde van uw huis is: </p>
+<p id="demo"> </p>
+<script>
+function myFunction() {
+    var x1, y,y_string,str1,str3,x2;
+    // Get the value of the input field with id="numb"
+    x1 = document.getElementById("numb1").value;
+    x2 = document.getElementById("numb2").value; 
+	y = Math.round(1.01*Math.min(x1,x2));
+	y_string = y.toString();
+	str1 = "&#8364;";
+	str3 = str1.concat(y_string,",-");
+    document.getElementById("demo").innerHTML = str3;
+}
+</script>
 
-    $var = 10;<br />
-
-The variable $var has a value of: 
-
-<?=$var?><br />
 
     </p>
     <h2>Stap 2/2: Maximale hypotheek op basis van inkomen</h2>
